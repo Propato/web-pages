@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+body {
+    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    height: 5%;
+    padding: 2.5%;
+}
+
+.img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 250px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.currencies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 16vh;
+    width: 16vw;
+
+    min-height: 40px;
+    min-width: 200px;
+}
+
+option:disabled {
+    display: none;
+}
+.selection {
+    background-color: #0355b6;
+    height: 4vh;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1;
+    padding: 0 24px 0 8px;
+    cursor: pointer;
+
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 3px;
+}
+.currency-value {
+    background-color: rgba(3,85,182,255);
+    height: 4vh;
+    width: 10vw;
+    display: inline-block;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1;
+    padding: 0 8px 0 8px;
+}
+
+#valueC2 {
+    background-color: rgba(5,29,122,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#valueC2:hover {
+    cursor: not-allowed;
+}
+/* Estilo da barra de rolagem */
+.selection::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+  
+/* Estilo do polegar (o "botão" da barra de rolagem) */
+.selection::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1; /* Cor do polegar */
+    border-radius: 5px; /* Borda arredondada do polegar */
+}
+
+/* Estilo da trilha (a área onde o polegar se move) */
+.selection::-webkit-scrollbar-track {
+    background-color: #1271e6; /* Cor da trilha */
+}
